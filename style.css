@@ -1,0 +1,193 @@
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* whole navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000; /* black */
+  padding: 15px 30px;
+}
+
+/* logo section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* clapboard image */
+.logo img {
+  width: 25px;
+}
+
+/* nav links */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  display: inline-block; /* IMPORTANT for transform */
+  transition: transform 0.3s, color 0.3s;
+}
+/*This is the animation when hovering*/
+.nav-links a:hover {
+  color: #e50914;
+  transform: rotateX(15deg) scale(1.1);
+  text-shadow: 0 0 8px #e50914;
+}
+/* hover effect (Netflix red) */
+.nav-links a:hover {
+  color: #e50914;
+}
+/* dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* hidden menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%; /* directly under Hobbies */
+  left: 0;
+  background: #1c1c1c;
+  padding: 10px 0;
+  list-style: none;
+  border-radius: 6px;
+  min-width: 150px;
+}
+.dropdown {
+  position: relative;
+  padding-bottom: 10px; /* creates invisible hover space */
+}
+
+/* dropdown items */
+.dropdown-menu li {
+  padding: 8px 15px;
+}
+
+.dropdown-menu li a {
+  color: white;
+}
+
+/* show on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* hover inside dropdown */
+.dropdown-menu li:hover {
+  background: #333;
+}
+body {
+  margin: 0;
+  background: #0f0f0f; /* dark movie vibe */
+  color: white;
+  font-family: Arial, sans-serif;
+}
+.logo span {
+  font-family: 'Gravitas One', serif;
+  text-shadow: 0 0 8px #e50914;
+  transition: 0.3s;
+}
+
+/* glow stronger on hover */
+.logo span:hover {
+  text-shadow: 0 0 15px #e50914, 0 0 30px #e50914;
+}
+.nav-links a {
+  font-family: 'Gravitas One', serif;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 60px;
+}
+
+/* text side */
+.about-text {
+  max-width: 500px;
+}
+
+.about-text h1 {
+  font-family: 'Gravitas One', serif;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  line-height: 1.6;
+  color: #ccc;
+}
+
+/* skills */
+.about-text ul {
+  margin-top: 10px;
+}
+
+.about-text li {
+  margin-bottom: 5px;
+}
+
+/* image side */
+.about-image img {
+  width: 500px;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+/* glow hover on image */
+.about-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #e50914;
+}
+.about {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.about{
+ font-family: 'Gravitas One', serif;
+
+}
+.fun-fact {
+  margin-top: 20px;
+  padding: 15px;
+  background: #1c1c1c;
+  border-left: 4px solid #e50914;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.fun-fact a {
+  color: white;
+  text-decoration: none;
+}
+
+/* 🔥 cinematic hover effect */
+.fun-fact:hover {
+  box-shadow: 0 0 15px #e50914;
+  transform: scale(1.02);
+}
