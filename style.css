@@ -144,7 +144,7 @@ body {
 
 /* image side */
 .about-image img {
-  width: 500px;
+  width: 1000px;
   border-radius: 12px;
   transition: 0.3s;
 }
