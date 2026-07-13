@@ -212,10 +212,14 @@ body {
 }
 
 /* flip card container */
-.flip-card {
+.movie-grid .flip-card {
   width: 200px;
   height: 300px;
   perspective: 1000px;
+  margin-bottom:20px;
+  border-radius: 12px;
+  overflow: hidden;
+
 }
 
 /* inner card */
@@ -243,9 +247,10 @@ body {
 }
 
 /* poster image */
-.flip-front img {
+.movie-grid .flip-front img {
   width: 100%;
   height: 100%;
+  object-fit:cover;
   border-radius: 12px;
 }
 
@@ -271,7 +276,7 @@ body {
   box-shadow: 0 0 15px #e50914;
 }
 .fade-in {
-  animation: fadeIn 1s ease-in;
+  animation: fade-In 1s ease-in;
 }
 
 .movie-item {
@@ -305,7 +310,7 @@ body {
 }
 
 .rating {
-  margin-top: 10px;
+  margin-top: 20px;
   font-family: 'Gravitas One', serif;
   color: #e50914;
   text-shadow: 0 0 8px #e50914;
@@ -654,11 +659,11 @@ font-family: 'Gravitas One', serif;
   text-shadow: 0 0 10px #222222, 0 0 20px #222222;
 }
 /* Flip setup */
-.flip-card {
+.pokemon .flip-card {
   perspective: 1000px;
 }
 
-.flip-inner {
+.pokemon .flip-inner {
   position: relative;
   width: 100%;
   height: 350px;
@@ -704,7 +709,7 @@ font-family: 'Gravitas One', serif;
 }
 
 /* Glow on hover */
-.flip-card:hover {
+.pokemon .flip-card:hover {
   box-shadow: 0 0 20px gold;
 }
 .card {
@@ -716,4 +721,20 @@ font-family: 'Gravitas One', serif;
 
     font-family: 'Gravitas One', serif;
 
+}
+
+.fade-in {
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
